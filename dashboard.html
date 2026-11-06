@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dashboard | FindMate</title>
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet"></head><body data-page="dashboard"><div id="nav"></div><main>
+<div class="pagehead"><div class="container"><h1>Dashboard</h1><p>Manage every lost and found report and update its status.</p></div></div>
+<div class="container pull"><div class="row g-3" id="stats"></div>
+<div class="panel mt-4"><div class="mb-3 d-flex gap-2"><button class="btn" data-t="all">All</button><button class="btn" data-t="lost">Lost</button><button class="btn" data-t="found">Found</button></div>
+<div class="table-responsive"><table class="table align-middle"><thead><tr><th>Item</th><th>Type</th><th>Category</th><th>Location</th><th>Date</th><th>Status</th><th>Actions</th></tr></thead><tbody id="rows"></tbody></table></div></div></div>
+</main><div id="foot"></div>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="storage.js"></script><script src="common.js"></script><script src="dashboard.js"></script></body></html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Search | FindMate</title>
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet"></head><body data-page="search"><div id="nav"></div><main>
+<div class="pagehead"><div class="container"><h1>Search items</h1><p>Filter by keyword, category, location, type and status.</p></div></div>
+<div class="container pull"><div class="panel row g-2">
+<div class="col-md-3"><input id="q" class="form-control" placeholder="Keyword" aria-label="Keyword"></div><div class="col-md-3"><input id="loc" class="form-control" placeholder="Location" aria-label="Location"></div>
+<div class="col-md-2"><select id="cat" class="form-select" aria-label="Category"></select></div>
+<div class="col-md-2"><select id="type" class="form-select" aria-label="Type"><option value="">Lost &amp; found</option><option value="lost">Lost</option><option value="found">Found</option></select></div>
+<div class="col-md-2"><select id="status" class="form-select" aria-label="Status"><option value="">Any status</option><option value="missing">Missing</option><option value="found">Found</option><option value="returned">Returned</option></select></div>
+<div class="col-12 d-flex justify-content-between"><span id="count" class="meta"></span><button id="reset" class="btn btn-sm btn-outline-dark">Clear filters</button></div></div>
+<div class="row g-3 mt-2" id="results"></div></div>
+</main><div id="foot"></div>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="storage.js"></script><script src="common.js"></script><script src="search.js"></script></body></html>

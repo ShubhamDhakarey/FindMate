@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Report Found Item | FindMate</title>
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet"></head><body data-page="report-found"><div id="nav"></div><main>
+<div class="pagehead"><div class="container"><h1>Report Found Item</h1><p>Help the owner get it back. Add where you found it and how to reach you.</p></div></div>
+<div class="container pull"><form id="reportForm" data-type="found" class="panel row g-3 needs-validation" novalidate>
+<div class="col-md-6"><label class="form-label" for="name">Item name</label><input id="name" class="form-control" required maxlength="60" placeholder="e.g. Black wallet"><div class="invalid-feedback">Enter the item name.</div></div>
+<div class="col-md-6"><label class="form-label" for="category">Category</label><select id="category" class="form-select" required></select><div class="invalid-feedback">Choose a category.</div></div>
+<div class="col-md-6"><label class="form-label" for="location">Location</label><input id="location" class="form-control" required maxlength="80" placeholder="e.g. Library, Main Campus"><div class="invalid-feedback">Enter the location.</div></div>
+<div class="col-md-6"><label class="form-label" for="date">Date</label><input id="date" type="date" class="form-control" required><div class="invalid-feedback">Pick a valid date (not in the future).</div></div>
+<div class="col-12"><label class="form-label" for="description">Description</label><textarea id="description" rows="4" class="form-control" required minlength="10" placeholder="Colour, brand, marks, what was inside…"></textarea><div class="invalid-feedback">Add at least 10 characters.</div></div>
+<div class="col-md-4"><label class="form-label" for="contactName">Your name</label><input id="contactName" class="form-control" required><div class="invalid-feedback">Enter your name.</div></div>
+<div class="col-md-4"><label class="form-label" for="contact">Phone or email</label><input id="contact" class="form-control" required minlength="6"><div class="invalid-feedback">Enter a phone number or email.</div></div>
+<div class="col-md-4"><label class="form-label" for="photo">Photo (optional)</label><input id="photo" type="file" accept="image/*" class="form-control"><img id="preview" class="preview" alt="Preview"></div>
+<div class="col-12"><button class="btn btn-teal btn-lg">Submit found report</button></div></form></div>
+</main><div id="foot"></div>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="storage.js"></script><script src="common.js"></script><script src="report.js"></script></body></html>
